@@ -53,7 +53,7 @@ Group
 	PercentField
 	{
 		name: 					"irCustom"
-		defaultValue: 			ir.value == "high" ? 100 : (ir.value == 'medium' ? 63 : (ir.value == "low" ? 40 : 100))
+		defaultValue: 			form.getConstant(ir.value, ir.value == "high" ? 100 : (ir.value == 'medium' ? 60 : (ir.value == "low" ? 36 : 100)))
 		min: 					1
 		enabled: 				ir.value == "custom"
 		info:					qsTr("The percentage that corresponds with the inherent risk probability.")
