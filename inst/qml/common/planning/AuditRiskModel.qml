@@ -78,7 +78,7 @@ Group
 	PercentField
 	{
 		name: 					"crCustom"
-		defaultValue:			form.getConstant(ir.value, ir.value == "high" ? 100 : (ir.value == 'medium' ? 52 : (ir.value == "low" ? 34 : 100)))
+		defaultValue:			form.getConstant(cr.value, cr.value == "high" ? 100 : (cr.value == 'medium' ? 52 : (cr.value == "low" ? 34 : 100)))
 		min: 					1
 		enabled: 				cr.value == "custom"
 		info:					qsTr("The percentage that corresponds with the control risk probability.")
